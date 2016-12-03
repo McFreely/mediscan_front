@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Scan from './Scan';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
+  <Scan />,
   document.getElementById('root')
 );

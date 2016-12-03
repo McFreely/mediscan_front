@@ -1,0 +1,26 @@
+html,
+body,
+#root {
+	height:100%;
+}
+
+/* ======================================= */
+/* SCAN */
+/* ======================================= */
+
+.scanPage {
+	display: flex;
+  flex-direction: column;
+	width:100%;
+	height: 100%;
+}
+
+.scanPageHeader {
+	height: 85px;
+	display: flex;
+	align-items: center;
+
+	h2 {
+		flex:1;
+	}
+}
