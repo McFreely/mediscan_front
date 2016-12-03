@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+    padding: 20px;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -21,4 +22,10 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.scanButton {
+    color: blue;
+    font-size: 22px;
+    font-weight: bold;
 }

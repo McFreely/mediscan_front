@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import URL from 'url-parse';
+import { parseCis } from './utils';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        const path = window.location.toString();
+        const url = new URL(path); 
+        const code = url.pathname.split('/')[1];
+
+        let idCode = "";
+        if (code !== "") {
+            idCode = parseCis(code).aggreement;
+        }
+
+        return (
+            <div className="App">
+            <a className="scanButton" href="http://zxing.appspot.com/scan?ret=https%3A%2F%2Fmediscan.localtunnel.me%2F%7BCODE%7D&SCAN_FORMATS=UPC_A,EAN_13,DATAMATRIX">Take a qr code</a>
+            <p>CIS: {idCode}</p>
+            </div>
+        );
+    }
 }
+
 
 export default App;
