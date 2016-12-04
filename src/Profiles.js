@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import AnonymousUserPict from './anonymous.svg';
+import './Mediscan.min.css';
 
 class Profiles extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <div className="ProfilesPage">
+				<img src={logo} className="ProfilesLogo" alt="profiles" />
+				<h1 className="ProfilesPageTitle">Mediscan</h1>
+
+				<ul className="ProfilesList">
+					<li>
+						<img src={AnonymousUserPict} className="ProfileUserPicture" alt="user" />
+						<h2>Anonyme</h2>
+						<i className="icon-arrow-right"></i>
+					</li>
+					<li>
+						<div className="ProfileAdd">
+							<i className="icon-plus"></i>
+						</div>
+						<h2>Ajouter un profil</h2>
+					</li>
+				</ul>
+			</div>
     );
   }
 }
