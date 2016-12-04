@@ -1,5 +1,5 @@
 .App {
-    padding: 20px;
+  /* padding: 20px; */
   /* text-align: center; */
 }
 
@@ -24,9 +24,14 @@
   to { transform: rotate(360deg); }
 }
 
-.scanButton {
+.scanIllustration {
     color: black;
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.DetailBackButton {
+    text-decoration: none;
+    color: black;
 }
