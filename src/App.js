@@ -9,6 +9,7 @@ class App extends Component {
         const url = new URL(path); 
         const code = url.pathname.split('/')[1];
 
+        // TODO switch between Scan and Details here
         let idCode = "";
         if (code !== "") {
             idCode = parseCis(code).aggreement;
