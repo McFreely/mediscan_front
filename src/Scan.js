@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './anonymous.svg';
+import logo from './logo.svg';
+import userPict from './anonymous.svg';
 import './Mediscan.min.css';
 
 class Scan extends Component {
@@ -7,7 +8,7 @@ class Scan extends Component {
     return (
       <div className="scanPage">
         <div className="scanPageHeader">
-					<img src={logo} className="scanPageUserPicture" alt="user" />
+					<img src={userPict} className="scanPageUserPicture" alt="user" />
           <h2>Anonymous <b>Guy</b></h2>
 					<i className="icon-change"></i>
         </div>
