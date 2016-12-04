@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import AnonymousUserPict from './anonymous.svg';
-import illustrationPills from './illustrationSirup.svg';
+import illustrationPills from './illustrationPills.svg';
 import illustrationCar from './illustrationCar.svg';
 import illustrationPregnant from './illustrationPregnant.svg';
 import illustrationSun from './illustrationSun.svg';
@@ -30,24 +30,21 @@ class Detail extends Component {
 		<a href="/" className="icon-arrow-left DetailBackButton"></a>
         <div className="DetailHeader">
                 <img src={illustrationPills} className="DetailHeaderPicture" alt="user" />
-                <h2 className="DetailHeaderTitle">Doliprane</h2>
+                <h2 className="DetailHeaderTitle">Maxilase</h2>
 				</div>
-				<div className="DetailDCI">Paracetamol 50g</div>
+				<div className="DetailDCI">Alpha-Amylase 3000 U.CEIP</div>
 				<div className="DetailPage">
 					<div className="DetailCustomWarning">
-						<img src={logo} className="DetailCustomWarningPicture" alt="user" />
+						<img src={illustrationPregnant} className="DetailCustomWarningPicture" alt="user" />
 						<div className="DetailCustomWarningText">
-							<h3>NE PAS MANGER CETTE MERDE !!!!</h3>
-							<p>Bli bla blou</p>
+							<h3>DECONSEILLé AUX FEMMES ENCEINTE</h3>
+							<p>Déconseillé lors de l'allaitement</p>
 						</div>
 					</div>
 					<hr />
 					<div className="DetailGeneralWarning">
 						<div className="warning">
 							<img src={illustrationCar} className="DetailWarningPicture" alt="user" />
-						</div>
-						<div className="warning">
-							<img src={illustrationPregnant} className="DetailWarningPicture" alt="user" />
 						</div>
 						<div className="warning">
 							<img src={illustrationSun} className="DetailWarningPicture" alt="user" />
@@ -59,18 +56,22 @@ class Detail extends Component {
 
 					<div className="DetailPosologie">
 						<h3>Posologie</h3>
-						<p>Lorem ipsum</p>
+						<ul>
+                            <li>Réservé à l'adulte</li>
+                            <li>1 comprimé 3 fois par jour</li>
+                            <li>Au cours des repas</li>
+                            <li>Ne pas croquer, ne pas ecraser</li>
+                        </ul>
 					</div>
 					<div className="DetailAllergie">
 						<h3>Allergies</h3>
-						<p>Lorem ipsum</p>
 						<ul>
-							<li>COUCOU PAUL</li>
+							<li>Pas d'allergie notable</li>
 						</ul>
 					</div>
 
 					<div className="alignCenter">
-						<a href="#" className="btnReadMore">
+						<a href="http://base-donnees-publique.medicaments.gouv.fr/extrait.php?specid=60095729" target="_blank" className="btnReadMore">
 							plus d'information
 						</a>
 						<p><i>Effets secondaires, composition, ...</i></p>

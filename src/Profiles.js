@@ -12,9 +12,11 @@ class Profiles extends Component {
 
 				<ul className="ProfilesList">
 					<li>
-						<img src={AnonymousUserPict} className="ProfileUserPicture" alt="user" />
-						<h2>Anonyme</h2>
-						<i className="icon-arrow-right"></i>
+                        <a href="/">
+                            <img src={AnonymousUserPict} className="ProfileUserPicture" alt="user" />
+                            <h2>Anonyme</h2>
+                            <i className="icon-arrow-right"></i>
+                        </a>
 					</li>
 					<li>
 						<div className="ProfileAdd">
