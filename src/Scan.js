@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './anonymous.svg';
 import './Mediscan.min.css';
 
 class Scan extends Component {
@@ -7,12 +7,15 @@ class Scan extends Component {
     return (
       <div className="scanPage">
         <div className="scanPageHeader">
-					<img src={logo} alt="user" />
+					<img src={logo} className="scanPageUserPicture" alt="user" />
           <h2>Anonymous <b>Guy</b></h2>
-					<i className="icon-switch"></i>
+					<i className="icon-change"></i>
         </div>
 				<div className="scanPageScanButton">
-					
+					<div className="scanIllustration">
+						<img src={logo} alt="Scan illustration" />
+						<p>Toucher pour scanner</p>
+					</div>
 				</div>
       </div>
     );
