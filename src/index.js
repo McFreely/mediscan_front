@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Scan from './Scan';
+import App from './App';
 import './index.css';
+import './icomoon.css';
 
 ReactDOM.render(
-  <Scan />,
+  <App />,
   document.getElementById('root')
 );
