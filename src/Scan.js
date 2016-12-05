@@ -29,7 +29,7 @@ class Scan extends Component {
                     ></i>
                 </div>
                 <div className="scanPageScanButton">
-                    <a className="scanIllustration" href="http://zxing.appspot.com/scan?ret=https%3A%2F%2Fmediscan.localtunnel.me%2F%7BCODE%7D&SCAN_FORMATS=UPC_A,EAN_13,DATAMATRIX">
+                    <a className="scanIllustration" href="http://zxing.appspot.com/scan?ret=http%3A%2F%2Fh4h10.dedimax.com%2F%7BCODE%7D&SCAN_FORMATS=UPC_A,EAN_13,DATAMATRIX">
                         <img src={logo} alt="Scan illustration" />
                         <p>Toucher pour scanner</p>
                     </a>
